@@ -21,7 +21,7 @@ public class MainController {
     @GetMapping("/desc")
     public String indexDesc(Model model) throws IOException {
         //display to user *dexcription
-        model.addAttribute("message", ReadFileToString.readFileToArray("description.txt"));
+        model.addAttribute("message", ReadFileToString.readFileToArray("Redame.md"));
         return "textDescription";
     }
 
