@@ -1,11 +1,20 @@
-package pl.akademiakodu.MethodsExerciseSpring.models.employees;
+package pl.akademiakodu.MethodsExerciseSpring.models;
 
-//employee model
+/**
+ * A Employee class that represents the data that will be stored from the data source.
+ */
 public class Employee {
+
+    /**
+     * Variables declarations
+     */
     private double gross;
     private double bonus;
     private int distanceFromWork;
 
+    /**
+     * Constructors
+     */
     public Employee() {
     }
 
@@ -15,6 +24,9 @@ public class Employee {
         this.distanceFromWork = distanceFromWork;
     }
 
+    /**
+     * Getters and setters section
+     */
     public double getGross() {
         return gross;
     }
@@ -39,3 +51,4 @@ public class Employee {
         this.distanceFromWork = distanceFromWork;
     }
 }
+

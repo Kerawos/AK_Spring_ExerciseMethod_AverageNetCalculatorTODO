@@ -1,13 +1,22 @@
 package pl.akademiakodu.MethodsExerciseSpring.models;
 
+/**
+ * Imports section
+ */
 import org.junit.Test;
+import pl.akademiakodu.MethodsExerciseSpring.models.services.MedicalInsurance;
 
 import static org.junit.Assert.*;
 
+/**
+ * Class for testing medical insurance logic
+ */
 public class MedicalInsuranceTest {
 
-    @Test
-    public void medicalInsuranceTest(){
+    /**
+     * Method for testing class methods
+     */
+    @Test public void medicalInsuranceTest(){
         double x = MedicalInsurance.getInstance().calcMedicalInsurance(250);
         double y = 22.5;
         assertEquals(y, x, 0);
